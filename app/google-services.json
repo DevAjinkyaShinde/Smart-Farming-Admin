@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "337898360914",
+    "project_id": "smart-farming-a4012",
+    "storage_bucket": "smart-farming-a4012.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337898360914:android:a169bd3d09ecac6b6bcf8b",
+        "android_client_info": {
+          "package_name": "com.silentcodder.smartfarmingadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337898360914-qu2oo5tgpkn9d2fr87qdnlokcqd8ttac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBSvmh1nSmkncy73nwXsn_o22rkClvpNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337898360914-qu2oo5tgpkn9d2fr87qdnlokcqd8ttac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

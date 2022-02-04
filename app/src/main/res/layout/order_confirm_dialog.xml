@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    app:contentPadding="20dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warning"
+            android:layout_centerHorizontal="true"
+            android:textColor="#F8DF1414"
+            android:fontFamily="@font/candal"
+            android:textSize="17sp"
+            android:id="@+id/text2"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_below="@id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Are you sure delete product ?"
+            android:textColor="@color/regular"
+            android:fontFamily="@font/candal"
+            android:layout_centerHorizontal="true"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/text"
+            android:background="@drawable/cancel_btn_bg"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/candal"
+            android:text="Delete"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/text"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/candal"
+            android:text="Cancel"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

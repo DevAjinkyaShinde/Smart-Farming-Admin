@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragments.ProductViewFragment">
+
+    <Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:text="Update Product"
+            android:textSize="17sp"
+            android:fontFamily="@font/candal"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/text2"
+            tools:ignore="HardcodedText" />
+
+    </Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Product"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:fontFamily="@font/candal"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:layout_below="@id/text"
+                android:id="@+id/productImg"
+                android:src="@drawable/ic_cloud_upload"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"/>
+            <Button
+                android:id="@+id/btnUploadImg"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="Change Image"
+                android:fontFamily="@font/candal"
+                android:layout_below="@id/productImg"
+                android:layout_centerHorizontal="true"
+                tools:ignore="HardcodedText" />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productImg"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:id="@+id/progressBar"/>
+            <TextView
+                android:id="@+id/productText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Product Name *"
+                android:fontFamily="@font/candal"
+                android:layout_below="@id/btnUploadImg"
+                android:layout_margin="10dp"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/productName"
+                android:inputType="textCapWords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:padding="10dp"
+                android:fontFamily="@font/candal"
+                android:textColor="@color/secondary"
+                android:layout_below="@id/productText"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+            <TextView
+                android:id="@+id/productDescText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Description *"
+                android:visibility="gone"
+                android:fontFamily="@font/candal"
+                android:layout_below="@id/productName"
+                android:layout_margin="10dp"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/productDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:gravity="start"
+                android:background="@drawable/edit_bg"
+                android:visibility="gone"
+                android:padding="10dp"
+                android:fontFamily="@font/candal"
+                android:textColor="@color/secondary"
+                android:layout_below="@id/productDescText"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+            <TextView
+                android:id="@+id/productCatText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Category *"
+                android:fontFamily="@font/candal"
+                android:layout_below="@id/productDesc"
+                android:layout_margin="10dp"
+                tools:ignore="HardcodedText" />
+            <Spinner
+                android:id="@+id/productCategory"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:padding="10dp"
+                android:fontFamily="@font/candal"
+                android:textColor="@color/secondary"
+                android:layout_below="@id/productCatText"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_below="@id/productCategory"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/priceTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Price *"
+                        android:fontFamily="@font/candal"
+                        android:layout_margin="10dp"
+                        tools:ignore="HardcodedText" />
+                    <EditText
+                        android:id="@+id/price"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_bg"
+                        android:padding="10dp"
+                        android:inputType="numberDecimal"
+                        android:fontFamily="@font/candal"
+                        android:textColor="@color/secondary"
+                        android:layout_below="@id/priceTxt"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/unitTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Unit(Kg/gm) *"
+                        android:fontFamily="@font/candal"
+                        android:layout_margin="10dp"
+                        tools:ignore="HardcodedText" />
+                    <Spinner
+                        android:id="@+id/Units"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_bg"
+                        android:padding="10dp"
+                        android:fontFamily="@font/candal"
+                        android:textColor="@color/secondary"
+                        android:layout_below="@id/unitTxt"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update product"
+                android:fontFamily="@font/candal"
+                android:layout_below="@id/linearLayout"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="HardcodedText" />
+
+            <ProgressBar
+                android:id="@+id/loader"
+                android:visibility="invisible"
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayout"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_below="@id/loader"
+                android:layout_marginEnd="10dp"
+                android:textColor="#D32F2F"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:fontFamily="@font/candal"
+                android:text="Delete Product"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

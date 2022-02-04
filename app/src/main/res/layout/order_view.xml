@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardElevation="3dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E9F3FAF9"
+        android:padding="10dp"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#4576832047"
+            android:visibility="gone"
+            android:maxLength="8"
+            android:fontFamily="@font/baloo_da"
+            android:layout_marginBottom="2dp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_below="@id/orderId"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/yellow"/>
+        <TextView
+            android:id="@+id/status"
+            android:layout_below="@id/orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Pending"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/icon"
+            tools:ignore="HardcodedText" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/status"
+            android:layout_marginTop="7dp"
+            android:background="@color/black"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderId"
+            android:text="8:10 PM , 19 April 2021"
+            android:layout_marginEnd="20dp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name : "
+            android:fontFamily="@font/candal"
+            android:layout_below="@id/view"
+            android:layout_marginTop="10dp"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="loading.."
+            android:layout_below="@id/view"
+            android:textColor="@color/regular"
+            android:fontFamily="@font/candal"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentRight="true"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/text2"
+            android:layout_below="@id/text"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/candal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Status : "
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/deliveryStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/regular"
+            android:fontFamily="@font/candal"
+            android:layout_below="@id/text"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentRight="true"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/text3"
+            android:layout_below="@id/text2"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/candal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price : "
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/Total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text2"
+            android:fontFamily="@font/candal"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/primary"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentRight="true"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_below="@id/text3"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/candal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address : "
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text4"
+            android:fontFamily="@font/candal"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/regular"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

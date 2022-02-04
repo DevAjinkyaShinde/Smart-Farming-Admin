@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".LoginOtpActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER OTP"
+        android:textSize="20sp"
+        android:textColor="@color/regular"
+        android:fontFamily="@font/candal"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Otp send on your mobile number"
+        android:layout_below="@id/text"
+        android:fontFamily="@font/candal"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/regular"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/getOtp"
+        android:layout_below="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/regular"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/candal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:letterSpacing="1"
+        android:hint="______"
+        android:background="@drawable/edit_txt_bg"
+        android:padding="10dp"
+        android:maxLength="6"
+        android:inputType="numberSigned"
+        tools:ignore="HardcodedText"
+        android:autofillHints="no" />
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50 Sec"
+        android:layout_below="@id/getOtp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/candal"
+        android:textColor="@color/secondary"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnVerifyOtp"
+        android:visibility="visible"
+        android:layout_below="@id/getOtp"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:fontFamily="@font/candal"
+        android:layout_height="wrap_content"
+        android:text="Verify Otp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+    <ProgressBar
+        android:id="@+id/loader"
+        android:visibility="invisible"
+        android:layout_below="@id/getOtp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

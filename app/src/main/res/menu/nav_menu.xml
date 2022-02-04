@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:icon="@drawable/dashboard"
+        android:title="DASHBOARD"
+        tools:ignore="HardcodedText" />
+    <item android:id="@+id/productList"
+        android:icon="@drawable/list"
+        android:title="PRODUCT LIST"
+        tools:ignore="HardcodedText" />
+    <item android:id="@+id/addProduct"
+        android:icon="@drawable/add_icon"
+        android:title="ADD PRODUCT"
+        tools:ignore="HardcodedText" />
+    <item android:id="@+id/notification"
+        android:icon="@drawable/notification_icon"
+        android:title="NOTIFICATION"
+        tools:ignore="HardcodedText" />
+    <item android:id="@+id/setting"
+        android:icon="@drawable/setting"
+        android:title="SETTING"
+        tools:ignore="HardcodedText" />
+
+
+</menu>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/all"
+        android:title="All Order"
+        tools:ignore="HardcodedText" />
+    <item android:id="@+id/pending"
+        android:title="Pending"
+        tools:ignore="HardcodedText" />
+    <item android:id="@+id/cancel"
+        android:title="Cancel"
+        tools:ignore="HardcodedText" />
+    <item android:id="@+id/complete"
+        android:title="Complete"
+        tools:ignore="HardcodedText" />
+</menu>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="52dp"
+    tools:context=".Fragments.OrderProductViewFragment">
+
+
+    <Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:text="Product List"
+            android:textSize="17sp"
+            android:fontFamily="@font/candal"
+            android:layout_centerHorizontal="true"
+            tools:ignore="HardcodedText" />
+
+    </Toolbar>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Details"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:textStyle="bold"
+        android:layout_below="@id/toolBar"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price          Qty"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:layout_below="@id/toolBar"
+        tools:ignore="HardcodedText" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_marginTop="5dp"
+        android:layout_above="@id/btnCancel"
+        android:id="@+id/recycleView"/>
+
+       <TextView
+           android:id="@+id/btnCancel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Cancel Order"
+           android:background="@drawable/cancel_btn_bg"
+           android:textColor="@color/white"
+           android:paddingStart="20dp"
+           android:paddingEnd="20dp"
+           android:layout_alignParentBottom="true"
+           android:layout_margin="10dp"
+           android:fontFamily="@font/candal"
+           android:paddingTop="5dp"
+           android:paddingBottom="5dp"
+           tools:ignore="HardcodedText" />
+
+       <TextView
+           android:id="@+id/btnComplete"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Complete Order"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentRight="true"
+           android:background="@drawable/complete_btn_bg"
+           android:textColor="@color/white"
+           android:paddingStart="20dp"
+           android:paddingEnd="20dp"
+           android:layout_margin="10dp"
+           android:fontFamily="@font/candal"
+           android:paddingTop="5dp"
+           android:paddingBottom="5dp"
+           tools:ignore="HardcodedText" />
+
+</RelativeLayout>
